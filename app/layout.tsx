@@ -1,9 +1,9 @@
 'use client'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const dmSans = DM_Sans({ subsets: ['latin'] })
 
 import { ThemeProvider, useThemeContext } from './provider'
 import { useEffect } from 'react'
@@ -15,9 +15,11 @@ export default function RootLayout({
     const theme = useThemeContext()
 
     return (
-        <html lang="en">
-            <body className={`${inter.className} theme-${theme.theme}`}>
-                <ThemeProvider>{children}</ThemeProvider>
+        <html lang="en" className="h-full">
+            <body className={`${dmSans.className} theme-${theme.theme} h-full`}>
+                <div className="app min-h-full flex flex-row">
+                    <ThemeProvider>{children}</ThemeProvider>
+                </div>
             </body>
         </html>
     )

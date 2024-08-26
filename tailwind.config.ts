@@ -1,10 +1,17 @@
 import type { Config } from 'tailwindcss'
-const darkTheme = require('./themes/dark')
-const lightTheme = require('./themes/light')
 
 const config: Config = {
     content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
     theme: {
+        colors: {
+            white: 'var(--color-white)',
+            colorBgPrimary: 'var(--color-bg-primary)',
+            colorBgSecondary: 'var(--color-bg-secondary)',
+            colorPrimary: 'var(--color-primary)',
+            textSecondary: 'var(--color-text-secondary)',
+            textPrimary: 'var(--color-text-primary)',
+            decoration: 'var(--color-decoration)',
+        },
         container: {
             center: true,
             padding: '2rem',
@@ -18,8 +25,6 @@ const config: Config = {
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
         },
-        ...darkTheme,
-        ...lightTheme,
     },
     plugins: [],
 }
