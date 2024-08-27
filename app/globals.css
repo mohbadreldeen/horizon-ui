@@ -23,11 +23,11 @@
     --color-decoration: #f4f7fe;
 }
 .theme-dark {
-    --color-bg-primary: #08050f;
-    --color-bg-secondary: #000000;
+    --color-bg-primary: #0b1437;
+    --color-bg-secondary: #111c44;
     --color-text-primary: #ffffff;
     --color-text-secondary: #a3aed0;
-    --color-decoration: #050a28;
+    --color-decoration: #283256;
 }
 
 body {
@@ -35,6 +35,12 @@ body {
     color: var(--color-text-primary);
     font-size: 0.9rem;
     line-height: 1.3;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 h3 {
     font-size: 1rem;
