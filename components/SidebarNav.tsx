@@ -6,7 +6,7 @@ import { links } from './AppLinks'
 import { usePathname } from 'next/navigation'
 
 const SidebarNav = ({ context }: contextPros) => {
-    const linkClasses = 'flex font-bold gap-3 font-size-16 pl-10 max-xl:pl-3 max-xl:pr-3'
+    const linkClasses = 'flex items-center font-bold gap-3 font-size-16 pl-10 max-xl:pl-3 max-xl:pr-3'
     const linkClassesNormal = `${linkClasses} text-textSecondary`
     const linkClassesActive = `${linkClasses} text-textPrimary`
 

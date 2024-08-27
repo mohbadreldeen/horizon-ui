@@ -12,6 +12,7 @@ const config: Config = {
             textSecondary: 'var(--color-text-secondary)',
             textPrimary: 'var(--color-text-primary)',
             decoration: 'var(--color-decoration)',
+            green: 'var(--color-green)',
         },
         container: {
             center: true,

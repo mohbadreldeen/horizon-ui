@@ -15,32 +15,32 @@ type linkOptions = {
 const links: linkOptions[] = [
     {
         name: 'Dashboard',
-        Icon: ({ className }) => <HomeIcon className={className} />,
+        Icon: ({ className }) => <HomeIcon className={className} width="24" height="24" />,
         route: '/',
     },
     {
         name: 'NFT Marketplace',
-        Icon: ({ className }) => <ShoppingIcon className={className} />,
+        Icon: ({ className }) => <ShoppingIcon className={className} width="24" height="24" />,
         route: '/marketplace',
     },
     {
         name: 'Tables',
-        Icon: ({ className }) => <BarsIcon className={className} />,
+        Icon: ({ className }) => <BarsIcon className={className} width="24" height="24" />,
         route: '/marketplace',
     },
     {
         name: 'Kanban',
-        Icon: ({ className }) => <MasonryIcon className={className} />,
+        Icon: ({ className }) => <MasonryIcon className={className} width="24" height="24" />,
         route: '/kanban',
     },
     {
         name: 'Profile',
-        Icon: ({ className }) => <PsersonIcon className={className} />,
+        Icon: ({ className }) => <PsersonIcon className={className} width="24" height="24" />,
         route: '/profile',
     },
     {
         name: 'Sign In',
-        Icon: ({ className }) => <LockIcon className={className} />,
+        Icon: ({ className }) => <LockIcon className={className} width="24" height="24" />,
         route: '/singin',
     },
 ]
