@@ -11,7 +11,7 @@ const ToggleTheme = () => {
 
     return (
         <button onClick={() => toggleTheme(theme === 'dark' ? 'light' : 'dark')}>
-            <MoonIcon className="fill-textSecondary hover:fill-textPrimary" />
+            <MoonIcon className="fill-textSecondary hover:fill-textPrimary" width="20" height="20" viewBox="0 0 24 24" />
         </button>
     )
 }
