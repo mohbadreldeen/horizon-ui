@@ -1,22 +1,12 @@
 import React from 'react'
 
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb'
-
+import PageTitle from './PageTitle'
+import SearchBar from './SearchBar'
 const PageHeader = () => {
     return (
-        <div>
-            <Breadcrumb>
-                <BreadcrumbList>
-                    <BreadcrumbItem>
-                        <BreadcrumbLink href="/">Pages</BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator />
-                    <BreadcrumbItem>
-                        <BreadcrumbLink href="/components">Dashboard</BreadcrumbLink>
-                    </BreadcrumbItem>
-                </BreadcrumbList>
-            </Breadcrumb>
-            <h1>Main Dashboard</h1>
+        <div className="flex flex-row justify-between items-end">
+            <PageTitle />
+            <SearchBar />
         </div>
     )
 }

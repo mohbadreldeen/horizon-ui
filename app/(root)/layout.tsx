@@ -19,7 +19,7 @@ export default function RootLayout({
             <Sidebar />
             <main className="flex flex-col w-full font-inter">
                 <MobileHeader />
-                <ToggleTheme />
+
                 {children}
             </main>
         </>
