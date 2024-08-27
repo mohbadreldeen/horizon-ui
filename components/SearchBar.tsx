@@ -15,10 +15,10 @@ const SearchBar = () => {
     return (
         <div className="flex bg-colorBgSecondary rounded-full p-2 h-[50px] items-center gap-3 max-lg:flex-grow-1 max-lg:w-full">
             <div className="bg-colorBgPrimary flex rounded-full px-2 items-center max-lg:flex-1 max-lg:w-full">
-                <SearchIcon className="stroke-textPrimary bg-transparent" />
+                <SearchIcon width="24" height="24" className="stroke-textPrimary bg-transparent" />
                 <input type="text" placeholder="Search" className={inputClasses} onFocus={() => setFocus(true)} onBlur={() => setFocus(false)} />
             </div>
-            <BellIcon className="stroke-textSecondary hover:stroke-textPrimary cursor-pointer " width="20" height="20" viewBox="0 0 24 24" />
+            <BellIcon className="fill-textSecondary hover:fill-textPrimary cursor-pointer " width="20" height="20" viewBox="0 0 24 24" />
             <ToggleTheme />
             <InfoIcon className="hover:fill-textPrimary fill-textSecondary cursor-pointer" width="20" height="20" viewBox="0 0 24 24" />
             <Image src="/avatar.jpg" alt="Profile" width={40} height={40} className="rounded-full" />
