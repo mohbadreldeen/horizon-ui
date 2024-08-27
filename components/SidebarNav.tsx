@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { links } from './AppLinks'
 import { usePathname } from 'next/navigation'
 
-const SidebarNav = () => {
+const SidebarNav = ({ context }: contextPros) => {
     const linkClasses = 'flex font-bold gap-3 font-size-16 pl-10 max-xl:pl-3 max-xl:pr-3'
     const linkClassesNormal = `${linkClasses} text-textSecondary`
     const linkClassesActive = `${linkClasses} text-textPrimary`
@@ -23,7 +23,7 @@ const SidebarNav = () => {
                 return (
                     <Link href={item.route} key={index} className={isActive ? linkClassesActive : linkClassesNormal}>
                         <Icon className={isActive ? iconClassesActive : iconClasses} />
-                        <label className="max-xl:hidden">{item.name}</label>
+                        <label className={context === 'mobile' ? '' : 'max-xl:hidden'}>{item.name}</label>
                     </Link>
                 )
             })}
