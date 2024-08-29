@@ -5,12 +5,14 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 import Logo from './Logo'
 import Sperator from './Sperator'
 import SidebarNav from './SidebarNav'
+import { Landmark } from 'lucide-react'
 const MobileHeader = () => {
     return (
         <>
             <div className="bg-colorBgSecondary max-sm:block hidden">
                 <div className="flex justify-between flex-row p-3">
-                    <img src="/icons/LogoIcon.svg" alt="Logo" className="w-8 h-8" />
+                    {/* <img src="/icons/LogoIcon.svg" alt="Logo" className="w-8 h-8" /> */}
+                    <Landmark />
                     <Sheet>
                         <SheetTrigger>
                             <HamburgerIcon />

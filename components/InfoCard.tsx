@@ -22,9 +22,9 @@ const InfoCard = ({
                     </div>
                 )}
                 <div className="flex flex-col gap-1">
-                    <div className="text-textSecondary ">{header}</div>
+                    <div className="text-textSecondary-100 ">{header}</div>
                     <div className="text-textPrimary text-3xl font-bold">{content}</div>
-                    {footer && <div className="text-textSecondary ">{footer}</div>}
+                    {footer && <div className="text-textSecondary-100 ">{footer}</div>}
                 </div>
             </div>
         </Card>

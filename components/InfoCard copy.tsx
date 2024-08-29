@@ -10,9 +10,9 @@ const InfoCard = () => {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                    <div className="text-textSecondary ">Earnings</div>
+                    <div className="text-textSecondary-100 ">Earnings</div>
                     <div className="text-textPrimary text-3xl font-bold">$350.4</div>
-                    <div className="text-textSecondary ">Since Last Month</div>
+                    <div className="text-textSecondary-100 ">Since Last Month</div>
                 </div>
             </div>
         </Card>

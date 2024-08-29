@@ -6,10 +6,22 @@ const config: Config = {
         colors: {
             transparent: 'transparent',
             white: 'var(--color-white)',
-            colorBgPrimary: 'var(--color-bg-primary)',
+            colorBgPrimary: {
+                DEFAULT: 'var(--color-bg-primary)',
+                100: 'var(--color-bg-primary-100)',
+            },
             colorBgSecondary: 'var(--color-bg-secondary)',
-            colorPrimary: 'var(--color-primary)',
-            textSecondary: 'var(--color-text-secondary)',
+            colorPrimary: {
+                DEFAULT: 'var(--color-primary)',
+                100: 'var(--color-primary-100)',
+            },
+
+            textSecondary: {
+                DEFAULT: 'var(--color-text-secondary-100)',
+                100: 'var(--color-text-secondary-100)',
+                200: 'var(--color-text-secondary-200)',
+            },
+
             textPrimary: 'var(--color-text-primary)',
             decoration: 'var(--color-decoration)',
             green: 'var(--color-green)',

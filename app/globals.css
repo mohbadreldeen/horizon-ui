@@ -4,29 +4,31 @@
 
 :root {
     --color-primary: #4318ff;
-
     --gradient-start: #4318ff;
     --gradient-end: #8387ff;
     --color-secondary: #84d9fd;
     --color-green: #05cd99;
-
     --color-white: #ffffff;
-
+    --color-text-secondary: #a3aed0;
+    --color-text-secondary-100: var(--color-text-secondary);
+    --color-text-secondary-200: #8b9cb5;
     --tw-gradient-stops: var(--gradient-start), var(--gradient-end);
 }
 
 .theme-light {
     --color-bg-primary: #f4f7fe;
+    --color-bg-primary-100: #e2e8f6;
     --color-bg-secondary: #ffffff;
     --color-text-primary: #2b3674;
-    --color-text-secondary: #a3aed0;
+
     --color-decoration: #f4f7fe;
 }
 .theme-dark {
     --color-bg-primary: #0b1437;
+    --color-bg-primary-100: #081130;
     --color-bg-secondary: #111c44;
     --color-text-primary: #ffffff;
-    --color-text-secondary: #a3aed0;
+
     --color-decoration: #283256;
 }
 
@@ -52,4 +54,8 @@ h3 {
     .text-balance {
         text-wrap: balance;
     }
+}
+
+.btn {
+    @apply px-4 py-2 rounded-lg  font-semibold bg-colorBgPrimary text-textSecondary-100 hover:bg-colorBgPrimary-100;
 }
