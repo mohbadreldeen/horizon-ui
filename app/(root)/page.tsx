@@ -6,16 +6,12 @@ import BarsIcon from '@/public/icons/bars.svg'
 import DollarIcon from '@/public/icons/dollar.svg'
 import ValueIndex from '@/components/ValueIndex'
 
-import LineChart from '@/components/charts/LineChart'
-
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, ChartNoAxesColumn, Ellipsis } from 'lucide-react'
-
-import { Button } from '@/components/ui/button'
-import CheckTable from '@/components/CheckTable'
+import CheckTableCard from '@/components/CheckTableCard'
 import RevenenuChart from '@/components/RevenenuChart'
 import TotalSpend from '@/components/TotalSpend'
+import DailyTrafic from '@/components/DailyTrafic'
 
+import PieChartCard from '@/components/PieChartCard'
 async function Home() {
     return (
         <div className="p-6 pt-10">
@@ -35,9 +31,15 @@ async function Home() {
                     <RevenenuChart />
                 </div>
             </div>
-            <div className="flex flex-row gap-5 pt-8 w-full">
-                <div className="w-1/2">
-                    <CheckTable />
+            <div className="flex flex-row gap-5 pt-8 w-full max-lg:flex-wrap">
+                <div className="w-1/2 max-lg:w-full">
+                    <CheckTableCard />
+                </div>
+                <div className="w-1/4 max-lg:w-full">
+                    <DailyTrafic />
+                </div>
+                <div className="w-1/4 max-lg:w-full">
+                    <PieChartCard />
                 </div>
             </div>
         </div>

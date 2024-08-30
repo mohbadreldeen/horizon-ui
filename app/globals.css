@@ -8,6 +8,7 @@
     --gradient-end: #8387ff;
     --color-secondary: #84d9fd;
     --color-green: #05cd99;
+    --color-red: #ff4d4d;
     --color-white: #ffffff;
     --color-text-secondary: #a3aed0;
     --color-text-secondary-100: var(--color-text-secondary);
@@ -58,4 +59,11 @@ h3 {
 
 .btn {
     @apply px-4 py-2 rounded-lg  font-semibold bg-colorBgPrimary text-textSecondary-100 hover:bg-colorBgPrimary-100;
+}
+
+.pie-charts .apexcharts-legend {
+    @apply bg-colorBgSecondary rounded-2xl;
+    padding: 0.5rem !important;
+    margin: 0.5rem 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }

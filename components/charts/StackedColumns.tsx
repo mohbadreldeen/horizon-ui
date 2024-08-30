@@ -10,7 +10,7 @@ const LineChart = ({
 }>) => {
     return (
         <div className={className}>
-            <Chart options={options} series={data} type="bar" height="300" />
+            <Chart options={options} series={data} type="bar" height="200" />
         </div>
     )
 }
