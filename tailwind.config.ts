@@ -15,6 +15,10 @@ const config: Config = {
                 DEFAULT: 'var(--color-primary)',
                 100: 'var(--color-primary-100)',
             },
+            primary: {
+                DEFAULT: 'var(--color-primary)',
+            },
+            secondary: { DEFAULT: 'var(--color-bg-primary)' },
 
             textSecondary: {
                 DEFAULT: 'var(--color-text-secondary-100)',
@@ -26,6 +30,7 @@ const config: Config = {
             decoration: 'var(--color-decoration)',
             green: 'var(--color-green)',
             red: 'var(--color-red)',
+            yellow: 'var(--color-yellow)',
         },
         container: {
             center: true,

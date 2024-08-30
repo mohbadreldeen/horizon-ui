@@ -1,6 +1,6 @@
 import { CheckData, columns } from '@/components/PaymentsTable/Columns'
 import { DataTable } from '@/components/PaymentsTable/DataTable'
-import checkTableData from '@/data/CheckDataTable'
+import checkTableData from '@/data/CheckTableData'
 import StackedColumns from '@/components/charts/StackedColumns'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'

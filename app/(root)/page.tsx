@@ -12,6 +12,8 @@ import TotalSpend from '@/components/TotalSpend'
 import DailyTrafic from '@/components/DailyTrafic'
 
 import PieChartCard from '@/components/PieChartCard'
+import ComplexTableCard from '@/components/ComplexTable'
+import { Progress } from '@/components/ui/progress'
 async function Home() {
     return (
         <div className="p-6 pt-10">
@@ -31,17 +33,22 @@ async function Home() {
                     <RevenenuChart />
                 </div>
             </div>
-            <div className="flex flex-row gap-5 pt-8 w-full max-lg:flex-wrap">
-                <div className="w-1/2 max-lg:w-full">
-                    <CheckTableCard />
-                </div>
-                <div className="w-1/4 max-lg:w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+                <CheckTableCard />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <DailyTrafic />
-                </div>
-                <div className="w-1/4 max-lg:w-full">
                     <PieChartCard />
                 </div>
+                <div>
+                    <ComplexTableCard />
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <ComplexTableCard />
+                    <ComplexTableCard />
+                </div>
             </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>
         </div>
     )
 }
