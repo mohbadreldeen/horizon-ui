@@ -4,6 +4,7 @@ export default {
         toolbar: {
             show: false,
         },
+        height: '200px',
     },
     tooltip: {
         style: {
