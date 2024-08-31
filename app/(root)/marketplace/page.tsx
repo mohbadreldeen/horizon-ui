@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-
+import TopCreators from '@/components/TopCreators'
 const Marketplace = () => {
     return (
         <div className="p-6 pt-10">
@@ -17,9 +17,11 @@ const Marketplace = () => {
                             </div>
                         </div>
                     </div>
-                    Grid Content
+                    <div></div>
                 </div>
-                <div className="">Sidebar</div>
+                <div className="">
+                    <TopCreators />
+                </div>
             </div>
         </div>
     )
