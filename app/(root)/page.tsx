@@ -19,7 +19,6 @@ import CalenderCard from '@/components/CalenderCard'
 async function Home() {
     return (
         <div className="p-6 pt-10">
-            <PageHeader />
             <div className="flex gap-5 pt-8 flex-wrap">
                 <InfoCard header="Earnings" content="$350.4" icon={<BarsIcon className="fill-colorPrimary" width="32px" height="32px" />} />
                 <InfoCard header="Spend this month" content="$642.39" icon={<DollarIcon className="fill-colorPrimary" width="32px" height="32px" />} />
