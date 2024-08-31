@@ -14,6 +14,7 @@ import DailyTrafic from '@/components/DailyTrafic'
 import PieChartCard from '@/components/PieChartCard'
 import ComplexTableCard from '@/components/ComplexTable'
 import TasksCard from '@/components/TasksCard'
+import CalenderCard from '@/components/CalenderCard'
 
 async function Home() {
     return (
@@ -46,7 +47,7 @@ async function Home() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <TasksCard />
-                    <TasksCard />
+                    <CalenderCard />
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>

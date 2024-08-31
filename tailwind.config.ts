@@ -27,6 +27,7 @@ const config: Config = {
             },
 
             textPrimary: 'var(--color-text-primary)',
+            'primary-foreground': 'var(--color-text-primary)',
             decoration: 'var(--color-decoration)',
             green: 'var(--color-green)',
             red: 'var(--color-red)',

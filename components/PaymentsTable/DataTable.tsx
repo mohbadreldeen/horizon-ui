@@ -23,7 +23,6 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
                     {table.getHeaderGroups().map((headerGroup) => (
                         <TableRow key={headerGroup.id} className="border-y-textSecondary-100">
                             {headerGroup.headers.map((header) => {
-                                console.log(header)
                                 return (
                                     <TableHead className=" text-textSecondary uppercase font-normal p-3" key={header.id}>
                                         {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
