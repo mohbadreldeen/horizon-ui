@@ -13,7 +13,8 @@ import DailyTrafic from '@/components/DailyTrafic'
 
 import PieChartCard from '@/components/PieChartCard'
 import ComplexTableCard from '@/components/ComplexTable'
-import { Progress } from '@/components/ui/progress'
+import TasksCard from '@/components/TasksCard'
+
 async function Home() {
     return (
         <div className="p-6 pt-10">
@@ -44,8 +45,8 @@ async function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                    <ComplexTableCard />
-                    <ComplexTableCard />
+                    <TasksCard />
+                    <TasksCard />
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5"></div>

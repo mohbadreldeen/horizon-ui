@@ -31,20 +31,4 @@ export default [
         date: '2021-09-12',
         status: 'Approved',
     },
-    {
-        id: 'm1n2o3p4',
-        name: 'Next.js App',
-        progress: 65,
-        quantity: 4.567,
-        date: '2021-09-18',
-        status: 'Denied',
-    },
-    {
-        id: 'q5r6s7t8',
-        name: 'Svelte App',
-        progress: 25,
-        quantity: 5.678,
-        date: '2021-09-22',
-        status: 'Error',
-    },
 ]
