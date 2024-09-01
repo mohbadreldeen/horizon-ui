@@ -9,7 +9,9 @@ const HistoryList = ({ className }: { className: string }) => {
         <Card className={`bg-secondary-background border-0 rounded-2xl h-full flex flex-col ${className}`}>
             <CardHeader className="flex flex-row justify-between p-5">
                 <CardTitle>History</CardTitle>
-                <Button className="btn text-primary">See All</Button>
+                <Button className="" variant={'link'}>
+                    See All
+                </Button>
             </CardHeader>
             <CardContent>
                 {data.map((item: historyItemProps, index: number) => (
