@@ -13,14 +13,14 @@ const SearchBar = () => {
     const inputClasses = `p-2 transition-width duration-300 bg-transparent outline-none ${focus ? 'w-[300px]' : 'w-[150px]'} max-lg:w-full max-lg:grow-1`
 
     return (
-        <div className="flex bg-colorBgSecondary rounded-full p-2 h-[50px] items-center gap-3 max-lg:flex-grow-1 max-lg:w-full">
-            <div className="bg-colorBgPrimary flex rounded-full px-2 items-center max-lg:flex-1 max-lg:w-full">
-                <SearchIcon width="24" height="24" className="stroke-textPrimary bg-transparent" />
+        <div className="flex bg-secondary-background rounded-full p-2 h-[50px] items-center gap-3 max-lg:flex-grow-1 max-lg:w-full">
+            <div className="bg-primary-background flex rounded-full px-2 items-center max-lg:flex-1 max-lg:w-full">
+                <SearchIcon width="24" height="24" className="stroke-primary-foreground bg-transparent" />
                 <input type="text" placeholder="Search" className={inputClasses} onFocus={() => setFocus(true)} onBlur={() => setFocus(false)} />
             </div>
-            <BellIcon className="fill-textSecondary hover:fill-textPrimary cursor-pointer " width="20" height="20" viewBox="0 0 24 24" />
+            <BellIcon className="fill-secondary-foreground hover:fill-primary-foreground cursor-pointer " width="20" height="20" viewBox="0 0 24 24" />
             <ToggleTheme />
-            <InfoIcon className="hover:fill-textPrimary fill-textSecondary cursor-pointer" width="20" height="20" viewBox="0 0 24 24" />
+            <InfoIcon className="hover:fill-primary-foreground fill-secondary-foreground cursor-pointer" width="20" height="20" viewBox="0 0 24 24" />
             <Image src="/avatar.jpg" alt="Profile" width={40} height={40} className="rounded-full" />
         </div>
     )

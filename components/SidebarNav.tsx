@@ -7,11 +7,11 @@ import { usePathname } from 'next/navigation'
 
 const SidebarNav = ({ context }: contextPros) => {
     const linkClasses = 'flex items-center font-bold gap-3 font-size-16 pl-10 max-xl:pl-3 max-xl:pr-3'
-    const linkClassesNormal = `${linkClasses} text-textSecondary-100`
-    const linkClassesActive = `${linkClasses} text-textPrimary`
+    const linkClassesNormal = `${linkClasses} text-secondary-foreground`
+    const linkClassesActive = `${linkClasses} text-primary-foreground`
 
-    const iconClasses = 'fill-textSecondary'
-    const iconClassesActive = 'fill-textPrimary'
+    const iconClasses = 'fill-secondary-foreground'
+    const iconClassesActive = 'fill-primary-foreground'
 
     const pathname = usePathname()
 

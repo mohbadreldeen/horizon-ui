@@ -11,13 +11,13 @@ const HistoryItem = ({ item }: { item: historyItemProps }) => {
                 <div className={`w-[64px] h-[64px] bg-cover rounded-xl`} style={{ backgroundImage: `url(${imageUrl})` }}></div>
                 <div className="flex flex-col gap">
                     <span className="font-bold text-lg ">{item.name}</span>
-                    <span className="text-textSecondary">{item.author}</span>
+                    <span className="text-secondary-foreground">{item.author}</span>
                 </div>
             </div>
             <div className="font-bold text-lg flex gap-3">
-                <EthereumIcon width="16" className="fill-textPrimary" /> {item.price}
+                <EthereumIcon width="16" className="fill-primary-foreground" /> {item.price}
             </div>
-            <div className="text-textSecondary">{getTimeAgo(item.timeStamp)}</div>
+            <div className="text-secondary-foreground">{getTimeAgo(item.timeStamp)}</div>
         </div>
     )
 }

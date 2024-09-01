@@ -16,15 +16,15 @@ const InfoCard = ({
         <Card>
             <div className="flex flex-row items-center gap-5">
                 {icon && (
-                    <div className="grid place-content-center bg-colorBgPrimary rounded-full w-12 h-12 p-7">
+                    <div className="grid place-content-center bg-primary-background rounded-full w-12 h-12 p-7">
                         {icon}
-                        {/* <BarsIcon className="fill-colorPrimary" width="32px" height="32px" /> */}
+                        {/* <BarsIcon className="fill-link-foreground" width="32px" height="32px" /> */}
                     </div>
                 )}
                 <div className="flex flex-col gap-1">
-                    <div className="text-textSecondary-100 ">{header}</div>
-                    <div className="text-textPrimary text-3xl font-bold">{content}</div>
-                    {footer && <div className="text-textSecondary-100 ">{footer}</div>}
+                    <div className="text-secondary-foreground">{header}</div>
+                    <div className="text-primary-foreground text-3xl font-bold">{content}</div>
+                    {footer && <div className="text-secondary-foreground">{footer}</div>}
                 </div>
             </div>
         </Card>

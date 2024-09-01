@@ -7,7 +7,7 @@ const Card = ({
     className?: string
     children: React.ReactNode
 }>) => {
-    return <div className={`bg-colorBgSecondary p-5 rounded-2xl basis-80 place-items-center ${className}`}>{children}</div>
+    return <div className={`bg-secondary-background p-5 rounded-2xl basis-80 place-items-center ${className}`}>{children}</div>
 }
 
 export default Card

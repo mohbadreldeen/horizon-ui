@@ -9,7 +9,7 @@ import { Landmark } from 'lucide-react'
 const MobileHeader = () => {
     return (
         <>
-            <div className="bg-colorBgSecondary max-sm:block hidden">
+            <div className="bg-secondary-background max-sm:block hidden">
                 <div className="flex justify-between flex-row p-3">
                     {/* <img src="/icons/LogoIcon.svg" alt="Logo" className="w-8 h-8" /> */}
                     <Landmark />
@@ -17,7 +17,7 @@ const MobileHeader = () => {
                         <SheetTrigger>
                             <HamburgerIcon />
                         </SheetTrigger>
-                        <SheetContent side="left" className="bg-colorBgSecondary">
+                        <SheetContent side="left" className="bg-secondary-background">
                             <Logo context={`mobile`} />
                             <Sperator />
                             <SidebarNav context="mobile" />

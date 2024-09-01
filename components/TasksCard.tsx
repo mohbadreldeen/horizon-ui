@@ -45,7 +45,7 @@ const TasksCard = () => {
     const [tasks, setTasks] = useState<tasksProps>(tasksData)
     const isSomeChecked = Object.values(tasks).some((task) => task.checked)
     return (
-        <Card className="bg-colorBgSecondary border-0 rounded-2xl h-full place-content-between flex flex-col">
+        <Card className="bg-secondary-background border-0 rounded-2xl h-full place-content-between flex flex-col">
             <CardHeader className="flex flex-row justify-between p-5">
                 <CardTitle className="flex gap-2 items-center">
                     <Checkbox
@@ -61,14 +61,14 @@ const TasksCard = () => {
                     Tasks
                 </CardTitle>
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="bg-colorBgPrimary hover:bg-colorBgPrimary-100 p-2 rounded-md mt-0">
-                        <Ellipsis className="text-colorPrimary h-5 w-5 stroke-2" />
+                    <DropdownMenuTrigger className="bg-primary-background hover:bg-primary-background-100 p-2 rounded-md mt-0">
+                        <Ellipsis className="text-link-foreground h-5 w-5 stroke-2" />
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="bg-colorBgSecondary border-0">
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
+                    <DropdownMenuContent className="bg-secondary-background border-0">
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </CardHeader>

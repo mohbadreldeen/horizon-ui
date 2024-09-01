@@ -6,7 +6,7 @@ import data from './Data'
 import HistoryItem from './HistoryItem'
 const HistoryList = ({ className }: { className: string }) => {
     return (
-        <Card className={`bg-colorBgSecondary border-0 rounded-2xl h-full flex flex-col ${className}`}>
+        <Card className={`bg-secondary-background border-0 rounded-2xl h-full flex flex-col ${className}`}>
             <CardHeader className="flex flex-row justify-between p-5">
                 <CardTitle>History</CardTitle>
                 <Button className="btn text-primary">See All</Button>

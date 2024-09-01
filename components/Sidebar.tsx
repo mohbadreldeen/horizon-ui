@@ -6,7 +6,7 @@ import SidebarNav from './SidebarNav'
 
 const Sidebar = () => {
     return (
-        <aside className=" bg-colorBgSecondary flex flex-col max-w-[300px] max-sm:hidden">
+        <aside className=" bg-secondary-background flex flex-col max-w-[300px] max-sm:hidden">
             <Logo />
             <Sperator />
             <SidebarNav />

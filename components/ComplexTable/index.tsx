@@ -8,18 +8,18 @@ import { Ellipsis } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 const CheckTable = () => {
     return (
-        <Card className="bg-colorBgSecondary border-0 rounded-2xl">
+        <Card className="bg-secondary-background border-0 rounded-2xl">
             <CardHeader className="flex flex-row justify-between p-5">
                 <CardTitle>Complex Table</CardTitle>
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="bg-colorBgPrimary hover:bg-colorBgPrimary-100 p-2 rounded-md ">
-                        <Ellipsis className="text-colorPrimary h-5 w-5 stroke-2" />
+                    <DropdownMenuTrigger className="bg-primary-background hover:bg-primary-background-100 p-2 rounded-md ">
+                        <Ellipsis className="text-link-foreground h-5 w-5 stroke-2" />
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent className="bg-colorBgSecondary border-0">
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
-                        <DropdownMenuItem className="text-textSecondary-100 cursor-pointer">Option 1</DropdownMenuItem>
+                    <DropdownMenuContent className="bg-secondary-background border-0">
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
+                        <DropdownMenuItem className="text-secondary-foreground-100 cursor-pointer">Option 1</DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </CardHeader>

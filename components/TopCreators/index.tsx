@@ -6,7 +6,7 @@ import { creatorProps } from './Types'
 
 const TopCreators = () => {
     return (
-        <Card className="bg-colorBgSecondary border-0 rounded-2xl">
+        <Card className="bg-secondary-background border-0 rounded-2xl">
             <CardHeader className="flex flex-row justify-between p-5">
                 <CardTitle>Top Creators</CardTitle>
             </CardHeader>

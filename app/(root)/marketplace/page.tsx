@@ -6,7 +6,7 @@ const Marketplace = () => {
         <div className="p-6 pt-10">
             <div className="grid grid-cols-3 gap-5">
                 <div className="col-span-3 md:col-span-2">
-                    <div className=" p-10 rounded-2xl bg-primary lg:bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat">
+                    <div className=" p-10 rounded-2xl primary-background lg:bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat">
                         <div className="grid grid-cols-1 lg:grid-cols-2">
                             <div>
                                 <h1 className="text-white text-4xl">Discover, collect, and sell extraordinary NFTs</h1>

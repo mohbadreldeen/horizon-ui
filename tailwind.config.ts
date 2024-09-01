@@ -5,30 +5,32 @@ const config: Config = {
     theme: {
         colors: {
             transparent: 'transparent',
-            white: 'var(--color-white)',
-            colorBgPrimary: {
-                DEFAULT: 'var(--color-bg-primary)',
-                100: 'var(--color-bg-primary-100)',
+            'accent-primary': {
+                DEFAULT: 'var(--color-accent-primary)',
+                100: 'var(--color-accent-primary-100)',
+                200: 'var(--color-accent-primary-200)',
             },
-            colorBgSecondary: 'var(--color-bg-secondary)',
-            colorPrimary: {
-                DEFAULT: 'var(--color-primary)',
-                100: 'var(--color-primary-100)',
+            'primary-foreground': 'var(--color-primary-foreground)',
+            'secondary-foreground': {
+                DEFAULT: 'var(--color-secondary-foreground)',
+                100: 'var(--color-secondary-foreground-100)',
+                200: 'var(--color-secondary-foreground-200)',
             },
-            primary: {
-                DEFAULT: 'var(--color-primary)',
+            'primary-background': {
+                DEFAULT: 'var(--color-primary-background)',
+                100: 'var(--color-primary-background-100)',
             },
-            secondary: { DEFAULT: 'var(--color-bg-primary)' },
+            'secondary-background': 'var(--color-secondary-background)',
+            destructive: {
+                DEFAULT: 'var(--color-destructive)',
+                100: 'var(--color-destructive-100)',
+                200: 'var(--color-destructive-200)',
+            },
+            'destructive-foreground': 'var(--color-destructive-foreground)',
 
-            textSecondary: {
-                DEFAULT: 'var(--color-text-secondary-100)',
-                100: 'var(--color-text-secondary-100)',
-                200: 'var(--color-text-secondary-200)',
-            },
-
-            textPrimary: 'var(--color-text-primary)',
-            'primary-foreground': 'var(--color-text-primary)',
+            'link-foreground': 'var(--color-link-foreground)',
             decoration: 'var(--color-decoration)',
+            white: 'var(--color-white)',
             green: 'var(--color-green)',
             red: 'var(--color-red)',
             yellow: 'var(--color-yellow)',

@@ -25,7 +25,7 @@ export const columns: ColumnDef<creatorProps>[] = [
         accessorKey: 'artworks',
         header: 'Artworks',
         cell: ({ getValue }) => {
-            return <span className="text-textSecondary-100">{getValue() as number}</span>
+            return <span className="text-secondary-foreground-100">{getValue() as number}</span>
         },
     },
     {

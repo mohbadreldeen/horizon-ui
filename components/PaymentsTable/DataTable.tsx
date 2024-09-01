@@ -21,10 +21,10 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
             <Table>
                 <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
-                        <TableRow key={headerGroup.id} className="border-y-textSecondary-100">
+                        <TableRow key={headerGroup.id} className="border-y-secondary-foreground-100">
                             {headerGroup.headers.map((header) => {
                                 return (
-                                    <TableHead className=" text-textSecondary uppercase font-normal p-3" key={header.id}>
+                                    <TableHead className=" text-secondary-foreground uppercase font-normal p-3" key={header.id}>
                                         {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
                                     </TableHead>
                                 )
