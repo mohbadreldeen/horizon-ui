@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import TopCreators from '@/components/TopCreators'
+import HistoryList from '@/components/HistoryList/HistoryList'
 const Marketplace = () => {
     return (
         <div className="p-6 pt-10">
@@ -21,6 +22,7 @@ const Marketplace = () => {
                 </div>
                 <div className="">
                     <TopCreators />
+                    <HistoryList className="mt-5" />
                 </div>
             </div>
         </div>

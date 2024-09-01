@@ -8,7 +8,7 @@ const TopCreators = () => {
     return (
         <Card className="bg-colorBgSecondary border-0 rounded-2xl">
             <CardHeader className="flex flex-row justify-between p-5">
-                <CardTitle>TopCreators</CardTitle>
+                <CardTitle>Top Creators</CardTitle>
             </CardHeader>
             <CardContent className="flex items-center">
                 <DataTable<creatorProps, string> columns={columns} data={topCreatorsData} />
