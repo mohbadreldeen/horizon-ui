@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import TopCreators from '@/components/TopCreators'
 import HistoryList from '@/components/HistoryList/HistoryList'
+import ProductFilter from '@/components/Product/ProductFilter'
 const Marketplace = () => {
     return (
         <div className="p-6 pt-10">
@@ -18,7 +19,8 @@ const Marketplace = () => {
                             </div>
                         </div>
                     </div>
-                    <div></div>
+
+                    <ProductFilter />
                 </div>
                 <div className="">
                     <TopCreators />

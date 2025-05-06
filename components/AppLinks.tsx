@@ -26,7 +26,7 @@ const links: linkOptions[] = [
     {
         name: 'Tables',
         Icon: ({ className }) => <BarsIcon className={className} width="24" height="24" />,
-        route: '/marketplace',
+        route: '/tables',
     },
     {
         name: 'Kanban',

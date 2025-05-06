@@ -23,7 +23,7 @@ const SidebarNav = ({ context }: contextPros) => {
                 return (
                     <Link href={item.route} key={index} className={isActive ? linkClassesActive : linkClassesNormal}>
                         <Icon className={isActive ? iconClassesActive : iconClasses} />
-                        <label className={context === 'mobile' ? '' : 'max-xl:hidden'}>{item.name}</label>
+                        <label className={`${context === 'mobile' ? '' : 'max-xl:hidden'} cursor-pointer`}>{item.name}</label>
                     </Link>
                 )
             })}
