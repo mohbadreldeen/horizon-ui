@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import Chart from 'react-apexcharts'
+import dynamic from 'next/dynamic'
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 import data from '@/data/DailyTraficData'
 import options from '@/config/StackedColumns'
 const LineChart = ({
@@ -10,7 +11,7 @@ const LineChart = ({
 }>) => {
     return (
         <div className={className}>
-            <Chart options={options} series={data} type="bar" height="300" />
+            <Chart options={options as any} series={data} type="bar" height="300" />
         </div>
     )
 }
